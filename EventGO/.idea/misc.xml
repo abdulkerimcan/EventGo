@@ -4,16 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/drawable/category_bg.xml" value="0.2985" />
+        <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/drawable/chat_item_bg_right.xml" value="0.2985" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/drawable/dialog_bg.xml" value="0.196" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/drawable/ic_cancel.xml" value="0.196" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/drawable/ic_check.xml" value="0.196" />
+        <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/activity_chat.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/activity_details.xml" value="0.30085470085470084" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/activity_reset.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/activity_sign_in.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/activity_sign_up_and_sign_in.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/activity_splash.xml" value="0.67" />
+        <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/activity_splash.xml" value="0.33" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/category_item_design.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/exit_dialog.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/fragment_chat.xml" value="0.18802083333333333" />
@@ -27,6 +29,8 @@
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/fragment_settings.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/fragment_theater.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/infowindow_layout.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/msg_item_left.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/msg_item_right.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/nav_header.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/layout/news_dialog_1.xml" value="0.358695652173913" />
         <entry key="..\:/Users/kerim/Desktop/EventGo/EventGO/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />

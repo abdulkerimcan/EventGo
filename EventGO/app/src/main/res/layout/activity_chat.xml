@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/light_bg"
+    android:background="@color/backgroundColor"
     android:layout_height="match_parent"
     tools:context=".Activities.ChatActivity">
 
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
 
         android:id="@+id/chat_activity_toolbar"
-        android:background="@color/arkaplanRengi">
+        android:background="@color/ToolbarColor">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -28,16 +28,17 @@
                 app:civ_border_color="@color/iconSelected"/>
 
             <TextView
+                android:id="@+id/chat_activity_textViewChatName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Denme"
-                android:id="@+id/chat_activity_textViewChatName"
-                android:layout_toRightOf="@id/chat_activity_circleImage"
-                android:textColor="@color/iconSelected"
                 android:layout_alignTop="@id/chat_activity_circleImage"
                 android:layout_marginLeft="5dp"
-                android:textStyle="bold"
-                android:textSize="16sp"/>
+                android:layout_toRightOf="@id/chat_activity_circleImage"
+                android:text="Denme"
+                android:layout_centerVertical="true"
+                android:textColor="@color/iconSelected"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="55dp"
@@ -63,33 +64,33 @@
         android:layout_below="@id/chat_activity_toolbar"/>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:padding="10dp"
-        android:background="@color/arkaplanRengi"
-        android:layout_alignParentBottom="true"
         android:id="@+id/chat_activity_relaBottom"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ToolbarColor"
+        android:padding="10dp">
 
         <EditText
-            android:layout_width="match_parent"
-            android:hint="Bir mesaj yazınız..."
-            android:paddingLeft="6dp"
-            android:layout_height="50dp"
             android:id="@+id/chat_activity_editMessage"
-            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
             android:layout_toLeftOf="@id/chat_activity_imgSend"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:hint="Bir mesaj yazınız..."
+            android:paddingLeft="6dp" />
 
         <ImageButton
-            android:onClick="btnSend"
+            android:id="@+id/chat_activity_imgSend"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/chat_activity_imgSend"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/ic_baseline_send_24"/>
+            android:background="@drawable/ic_baseline_send_24"
+            android:onClick="btnSend" />
     </RelativeLayout>
 
 </RelativeLayout>
