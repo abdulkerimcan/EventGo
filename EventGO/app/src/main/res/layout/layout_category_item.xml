@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/category_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.4"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/layout_category_item_img"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:scaleType="fitXY" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.6"
+            android:gravity="center_horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="5dp">
+
+                    <TextView
+                        android:id="@+id/layout_category_item_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NAME"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="5dp">
+
+                    <TextView
+                        android:id="@+id/layout_category_item_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="location"
+                        android:textAllCaps="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingHorizontal="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/layout_category_item_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="date" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/layout_category_item_hour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:text="hour" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="0px"
+                            android:gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Price:"
+                                android:gravity="start"
+                                android:textColor="@color/iconSelected"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0px"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5">
+                            <TextView
+                                android:id="@+id/layout_category_item_price"
+                                android:layout_width="wrap_content"
+                                android:text="100 TL"
+                                android:textColor="@color/iconSelected"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0px"
+                            android:layout_weight="0.8"
+                            android:layout_height="match_parent">
+
+                            <RatingBar
+                                android:id="@+id/category_item_ratingbar"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_width="wrap_content"
+                                android:progressTint="@color/iconSelected"
+                                android:layout_height="wrap_content"
+                                android:rating="3" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0px"
+                            android:layout_weight="0.2"
+                            android:layout_height="match_parent">
+
+                            <com.sackcentury.shinebuttonlib.ShineButton
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:shine_count="15"
+                                app:enable_flashing="true"
+                                android:layout_alignParentEnd="true"
+                                android:id="@+id/layout_category_item_favorite"
+                                app:btn_color="@android:color/darker_gray"
+                                app:btn_fill_color="#FF1744"
+                                app:allow_random_color="true"
+                                app:siShape="@raw/heart"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:padding="7dp"
+            android:hint="make Comment"
+            android:paddingStart="20dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/comment_dialog_edittext"
+            android:gravity="top|left"
+            android:background="@drawable/custom_dialog_bg"
+            android:layout_marginTop="30dp"
+            android:layout_height="100dp"/>
+        <RatingBar
+            android:id="@+id/commentRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/comment_dialog_edittext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:isIndicator="false"
+
+            android:progressTint="@color/iconSelected"
+            style="@style/Widget.AppCompat.RatingBar.Indicator" />
+
+
+        <Button
+            android:id="@+id/comment_dialog_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_dialog_edittext"
+            android:layout_marginTop="80dp"
+            android:text="Accept"
+            android:background="@drawable/buton_bg"
+            android:backgroundTint="@color/iconSelected"
+            android:textStyle="bold"
+            android:onClick="makeComment"
+            android:textColor="@color/arkaplanRengi"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"/>
+
+        <Button
+            android:id="@+id/comment_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_dialog_edittext"
+            android:layout_marginTop="80dp"
+            android:text="Cancel"
+            android:background="@drawable/buton_bg"
+            android:backgroundTint="@color/iconSelected"
+            android:textStyle="bold"
+            android:onClick="makeComment"
+            android:layout_marginBottom="20dp"
+            android:layout_alignEnd="@id/comment_dialog_edittext"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/arkaplanRengi"/>
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

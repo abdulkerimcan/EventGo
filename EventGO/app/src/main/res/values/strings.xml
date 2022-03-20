@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">EventGO</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="sign_in">Sign In</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="are_you_sure_you_want_to_log_out_of_your_account">Are you sure you want to log out of your account?</string>
+    <string name="yes">Yes</string>
+    <string name="no" />
+    <string name="No">No</string>
+    <string name="change_your_profile_picture">Change Your Profile Picture</string>
+    <string name="title"><b></b></string>
+
+    <string-array name="categories">
+        <item>Select Category</item>
+        <item>Concerts</item>
+        <item>Theaters</item>
+        <item>Museum</item>
+    </string-array>
+
+    <string-array name="ticketCount">
+        <item>Select Count</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+
+
+    <string-array name="Count">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="snacks">
+        <item>Select Snack</item>
+        <item>Popcorn</item>
+        <item>wafer</item>
+        <item>nut</item>
+        <item>french fries</item>
+        <item>biscuit</item>
+    </string-array>
+
+    <string-array name="drinks">
+        <item>Select Drink</item>
+        <item>Coke</item>
+        <item>Fanta</item>
+        <item>soda water</item>
+        <item>ice tea</item>
+        <item>lemonade</item>
+    </string-array>
+
+    <string-array name="products">
+        <item>Select product</item>
+        <item>tshirt</item>
+        <item>flar</item>
+        <item>sweater</item>
+        <item>wristband</item>
+        <item>hat</item>
+    </string-array>
+
+
+</resources>

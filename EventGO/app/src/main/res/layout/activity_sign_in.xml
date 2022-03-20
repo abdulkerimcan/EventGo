@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_bg"
+    tools:context=".Activities.SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.08">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signIn_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:background="@color/arkaplanRengi"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Sign In"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/iconSelected"
+                android:layout_height="match_parent" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:layout_weight="0.24">
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="0px"
+        android:layout_weight="0.15">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_input_sifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="50dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterEnabled="true"
+            app:counterTextAppearance="@style/CounterStyle"
+            app:counterMaxLength="20"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp">
+
+            <EditText
+                android:id="@+id/signIn_EditSifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="50dp"
+        android:layout_weight="0.10">
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:paddingHorizontal="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buton_bg"
+            android:backgroundTint="@color/arkaplanRengi"
+            android:onClick="btnSignIn"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@color/iconSelected"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="10dp"
+        android:layout_weight="0.43">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnForgotPassword"
+            android:text="@string/forgot_password"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Categories">
+            <menu>
+
+
+                <item
+                    android:id="@id/theater"
+                    android:icon="@drawable/ic_action_tiyatro"
+                    android:iconTint="@color/iconSelected"
+                    android:title="Theater"/>
+
+                <item
+                    android:id="@id/concerts"
+                    android:icon="@drawable/ic_action_konser"
+                    android:iconTint="@color/iconSelected"
+                    android:title="Concerts" />
+
+
+                <item
+                    android:id="@id/museum"
+                    android:icon="@drawable/ic_action_muze"
+                    android:iconTint="@color/iconSelected"
+                    android:title="Museum" />
+
+                <item
+                    android:id="@id/mapsFragment"
+                    android:icon="@drawable/ic_map"
+                    android:iconTint="@color/iconSelected"
+                    android:title="Near Me" />
+
+
+                <item
+                    android:id="@id/myTicketsFragment"
+                    android:icon="@drawable/asd"
+                    android:iconTint="@color/iconSelected"
+                    android:title="My Tickets" />
+                <item
+                    android:id="@id/myEventsFragment"
+                    android:icon="@drawable/events"
+                    android:iconTint="@color/iconSelected"
+                    android:title="My Events" />
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Extras">
+            <menu>
+                <item
+                    android:id="@id/settings"
+                    android:icon="@drawable/ic_action_settings"
+                    android:iconTint="@color/iconSelected"
+                    android:title="Settings" />
+                <item
+                    android:id="@+id/exit"
+                    android:icon="@drawable/ic_exit"
+                    android:iconTint="@color/iconSelected"
+                    android:title="Sign Out" />
+            </menu>
+        </item>
+    </group>
+</menu>

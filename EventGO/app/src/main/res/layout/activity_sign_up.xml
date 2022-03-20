@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/signup_layout"
+    android:background="@drawable/light_bg"
+    tools:context=".Activities.SignUpActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.08">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signUp_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:background="@color/arkaplanRengi"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Sign Up"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/iconSelected"
+                android:layout_height="match_parent" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:layout_weight="0.15">
+
+        <TextView
+            android:id="@+id/signUp_txtGelenMail"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/upload_userimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="selectImg"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_camera"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.20">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="50dp"
+            android:id="@+id/sign_up_input_mail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterEnabled="true"
+            app:counterTextAppearance="@style/CounterStyle"
+            app:counterMaxLength="20"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp">
+
+
+            <EditText
+                android:id="@+id/signUp_EditUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter username"
+                android:inputType="textEmailAddress"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.20">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_up_input_sifre"
+            android:paddingHorizontal="50dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:counterTextAppearance="@style/CounterStyle"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp">
+
+            <EditText
+                android:id="@+id/signUp_EditSifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.20">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_up_input_confirm"
+            android:paddingHorizontal="50dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:counterTextAppearance="@style/CounterStyle"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp">
+
+            <EditText
+                android:id="@+id/signUp_EditSifreOnay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.15">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/customer_radiobutton"
+                android:text="Customer"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/org_radiobutton"
+                android:text="Organizer"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.28">
+        <Button
+            android:id="@+id/button"
+            android:paddingHorizontal="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buton_bg"
+            android:backgroundTint="@color/arkaplanRengi"
+            android:onClick="btnSignUp"
+            android:text="SIGN up"
+            android:textAllCaps="true"
+            android:textColor="@color/iconSelected"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

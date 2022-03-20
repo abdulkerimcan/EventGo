@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="7dp"
+    android:background="@drawable/category_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_height="0px">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/concerts_item_design_cardView"
+            android:layout_width="140dp"
+            android:layout_height="155dp"
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:id="@+id/concerts_item_design_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/bkmlogo"
+                android:scaleType="fitXY"/>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:paddingStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0px">
+        <TextView
+            android:id="@+id/concerts_item_design_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BKM Theatre"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.1"
+        android:layout_gravity="center"
+        android:paddingStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0px">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:gravity="start"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="start"
+                    android:id="@+id/concerts_item_design_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22/03/2020"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:gravity="end"
+                android:layout_weight="0.5"
+                android:paddingEnd="5dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/main_price"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/iconSelected"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="100TL"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingStart="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/concerts_item_design_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atatürk Kültür Merkezi"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.1"
+        android:paddingStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0px">
+        <RatingBar
+            android:progressTint="@color/iconSelected"
+            android:id="@+id/concerts_item_design_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:rating="4.6"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

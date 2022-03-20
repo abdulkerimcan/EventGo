@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+    tools:context=".Activities.ResetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.08">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sign_in_and_up_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/arkaplanRengi"
+            android:paddingStart="15dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Sign in or Sign Up"
+                android:textColor="@color/iconSelected"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.92">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="166dp"
+                android:layout_height="166dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.01">
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_action_profile" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.12"
+                android:paddingHorizontal="50dp"
+                android:paddingBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sign_in_and_up_input_email"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:counterTextAppearance="@style/CounterStyle">
+
+                    <EditText
+                        android:id="@+id/EditTextEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter E-mail"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="30"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buton_bg"
+                    android:backgroundTint="@color/arkaplanRengi"
+                    android:onClick="nextBtn"
+                    android:paddingHorizontal="50dp"
+                    android:text="Next"
+                    android:textColor="@color/iconSelected"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

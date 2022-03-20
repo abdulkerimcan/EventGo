@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:paddingVertical="5dp"
+        android:layout_weight="0.12"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/settings_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_camera" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.30">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/change_your_profile_picture"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.70"
+                android:paddingHorizontal="115dp">
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Turn Notification On / Off"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:paddingTop="5dp"
+        android:layout_weight="0.08">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="center">
+
+                <Button
+
+                    android:id="@+id/btnChangePassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buton_bg"
+                    android:backgroundTint="@color/arkaplanRengi"
+                    android:paddingHorizontal="15dp"
+                    android:text="Change Password"
+                    android:textColor="@color/iconSelected"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnChangeUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buton_bg"
+                    android:backgroundTint="@color/arkaplanRengi"
+                    android:paddingHorizontal="15dp"
+                    android:text="change Username"
+                    android:textColor="@color/iconSelected"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_LayoutChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:visibility="gone"
+        android:paddingTop="20dp"
+        android:layout_weight="0.35">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:paddingHorizontal="50dp"
+                android:gravity="center"
+                android:layout_weight="0.36">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/settings_inputOldPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextAppearance="@style/CounterStyle">
+
+                    <EditText
+                        android:id="@+id/settings_oldPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/arkaplanRengi"
+                        android:hint="Old Password"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:gravity="center"
+                android:paddingHorizontal="50dp"
+                android:layout_weight="0.36">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/settings_inputNewPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextAppearance="@style/CounterStyle">
+
+                    <EditText
+                        android:id="@+id/settings_newPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/arkaplanRengi"
+                        android:hint="New Password"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:paddingHorizontal="50dp"
+                android:gravity="center"
+                android:layout_weight="0.36">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/settings_inputNewConfirmPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextAppearance="@style/CounterStyle">
+
+                    <EditText
+                        android:id="@+id/settings_newConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/arkaplanRengi"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_LayoutChangeUsername"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:visibility="gone"
+        android:layout_weight="0.35">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:paddingHorizontal="50dp"
+                android:paddingBottom="5dp"
+                android:gravity="bottom"
+                android:layout_weight="0.50">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/settings_inputNewUsername"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextAppearance="@style/CounterStyle">
+
+                    <EditText
+                        android:id="@+id/settings_newUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Change Username"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:paddingHorizontal="50dp"
+                android:gravity="top"
+                android:layout_weight="0.50">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/settings_inputPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextAppearance="@style/CounterStyle">
+
+                    <EditText
+                        android:id="@+id/settings_Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/arkaplanRengi"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_LayoutEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.35">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:gravity="center_horizontal"
+        android:paddingVertical="10dp"
+        android:layout_weight="0.12">
+
+        <Button
+            android:id="@+id/settings_btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="50dp"
+            android:background="@drawable/buton_bg"
+            android:backgroundTint="@color/arkaplanRengi"
+            android:text="update"
+            android:textColor="@color/iconSelected"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+
+
+    <!-- Bottom Bar . -->
+    <fragment
+        android:id="@+id/home"
+        android:name="com.furkankerim.eventgo.Fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.furkankerim.eventgo.Fragments.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.furkankerim.eventgo.Fragments.FavoritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.furkankerim.eventgo.Fragments.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <!-- Navigation Bar . -->
+    <fragment
+        android:id="@+id/concerts"
+        android:name="com.furkankerim.eventgo.Fragments.ConcertsFragment"
+        android:label="Concerts"
+        tools:layout="@layout/fragment_concerts" />
+    <fragment
+        android:id="@+id/theater"
+        android:name="com.furkankerim.eventgo.Fragments.TheaterFragment"
+        android:label="fragment_theater"
+        tools:layout="@layout/fragment_theater" />
+    <fragment
+        android:id="@+id/museum"
+        android:name="com.furkankerim.eventgo.Fragments.MuseumFragment"
+        android:label="fragment_museum"
+        tools:layout="@layout/fragment_museum" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.furkankerim.eventgo.Fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.furkankerim.eventgo.Fragments.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/myTicketsFragment"
+        android:name="com.furkankerim.eventgo.Fragments.MyTicketsFragment"
+        android:label="fragment_my_tickets"
+        tools:layout="@layout/fragment_my_tickets" />
+    <fragment
+        android:id="@+id/myEventsFragment"
+        android:name="com.furkankerim.eventgo.Fragments.MyEventsFragment"
+        android:label="fragment_my_events"
+        tools:layout="@layout/fragment_my_events" />
+
+
+</navigation>

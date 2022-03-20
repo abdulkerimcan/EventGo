@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1078066205667",
+    "firebase_url": "https://eventgo-7ed7c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eventgo-7ed7c",
+    "storage_bucket": "eventgo-7ed7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078066205667:android:bc9c35042ede7e6c46c6d6",
+        "android_client_info": {
+          "package_name": "com.furkankerim.eventgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078066205667-kpcmpk0bte04gsbp2o1hf9envpr4chnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdHzZJll4Idkof8oteqU-dHrY9sJxOP3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078066205667-kpcmpk0bte04gsbp2o1hf9envpr4chnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_bg"
+    tools:ignore="ExtraText">
+    tools:context=".Activities.ResetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.08">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/resetPassword_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:background="@color/arkaplanRengi"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Reset Password"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/iconSelected"
+                android:layout_height="match_parent" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.92">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="166dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="166dp"
+                android:layout_weight="0.01">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/profile"
+                    app:srcCompat="@drawable/ic_action_profile" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:paddingHorizontal="50dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="0.12">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/reset_input_isim"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:counterEnabled="true"
+                    app:counterTextAppearance="@style/CounterStyle"
+                    app:counterMaxLength="30"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxCornerRadiusBottomEnd="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:id="@+id/reset_EditTextEmail"
+                        android:textStyle="bold"
+                        android:maxLength="30"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:hint="E-mailinizi Giriniz"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:gravity="center_horizontal"
+                android:layout_weight="0.33">
+                <Button
+                    android:id="@+id/btnReset"
+                    android:paddingHorizontal="50dp"
+                    android:layout_width="wrap_content"
+                    android:onClick="resetBtn"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/arkaplanRengi"
+                    android:background="@drawable/buton_bg"
+                    android:text="Reset"
+                    android:textColor="@color/iconSelected"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
