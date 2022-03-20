@@ -93,7 +93,7 @@
                     android:backgroundTint="@color/arkaplanRengi"
                     android:paddingHorizontal="15dp"
                     android:text="Change Password"
-                    android:textColor="@color/iconSelected"
+                    android:textColor="@color/iconunSelected"
                     android:textStyle="bold" />
             </RelativeLayout>
 
@@ -111,7 +111,7 @@
                     android:backgroundTint="@color/arkaplanRengi"
                     android:paddingHorizontal="15dp"
                     android:text="change Username"
-                    android:textColor="@color/iconSelected"
+                    android:textColor="@color/iconunSelected"
                     android:textStyle="bold" />
             </RelativeLayout>
 
@@ -328,11 +328,11 @@
             android:id="@+id/settings_btnUpdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="50dp"
             android:background="@drawable/buton_bg"
             android:backgroundTint="@color/arkaplanRengi"
+            android:paddingHorizontal="50dp"
             android:text="update"
-            android:textColor="@color/iconSelected"
+            android:textColor="@color/iconunSelected"
             android:textStyle="bold" />
     </RelativeLayout>
 

@@ -7,13 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="iconSelected">#FF8000</color>
-    <color name="iconunSelected">#cfcfcf</color>
+    <color name="iconSelected">#303f9f</color>
+    <color name="iconunSelected">#FFFFFF</color>
     <color name="green">#00ff00</color>
     <color name="purple">#ff00ff</color>
     <color name="arkaplanRengi">#2862A2</color>
     <color name="dialogRenk">#000B21</color>
     <color name="arka">#96D8F6</color>
+    <color name="ToolbarColor">#4ba3c7</color>
+    <color name="backgroundColor">#e1f5fe</color>
 </resources>
 
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/light_bg"
+    android:background="@color/backgroundColor"
     android:orientation="vertical"
     tools:ignore="ExtraText">
     tools:context=".Activities.ResetActivity">
@@ -18,7 +18,7 @@
             android:id="@+id/sign_in_and_up_toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/arkaplanRengi"
+            android:background="@color/ToolbarColor"
             android:paddingStart="15dp"
             tools:ignore="RtlSymmetry">
 
@@ -28,7 +28,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:text="Sign in or Sign Up"
-                android:textColor="@color/iconSelected"
+                android:textColor="@color/iconunSelected"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -49,17 +49,31 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="EVENTGO"
+                android:textColor="@color/iconSelected"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+
             <RelativeLayout
                 android:layout_width="166dp"
                 android:layout_height="166dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
                 android:layout_weight="0.01">
 
-                <ImageView
-                    android:id="@+id/profile"
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:srcCompat="@drawable/ic_action_profile" />
+                    android:layout_height="wrap_content"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/usericon" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -67,6 +81,7 @@
                 android:layout_height="0px"
                 android:layout_weight="0.12"
                 android:paddingHorizontal="50dp"
+
                 android:paddingBottom="5dp">
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -105,12 +120,13 @@
                     android:id="@+id/btnNext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:background="@drawable/buton_bg"
                     android:backgroundTint="@color/arkaplanRengi"
                     android:onClick="nextBtn"
                     android:paddingHorizontal="50dp"
                     android:text="Next"
-                    android:textColor="@color/iconSelected"
+                    android:textColor="@color/iconunSelected"
                     android:textSize="17sp" />
             </RelativeLayout>
 

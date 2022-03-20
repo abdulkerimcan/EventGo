@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import com.furkankerim.eventgo.R;
 
 public class SplashActivity extends AppCompatActivity {
-    Animation mAnim,anim1,anim2;
-    ImageView img,resim1,resim2;
+    Animation mAnim,anim1,anim2,logoAnim;
+    ImageView img,resim1,resim2,logo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +22,13 @@ public class SplashActivity extends AppCompatActivity {
         mAnim = AnimationUtils.loadAnimation(this,R.anim.rotate);
         anim1 = AnimationUtils.loadAnimation(this,R.anim.down_left);
         anim2 = AnimationUtils.loadAnimation(this,R.anim.up_right);
+        logoAnim = AnimationUtils.loadAnimation(this,R.anim.zoom_in);
 
         resim1 = findViewById(R.id.resim1);
         resim2 = findViewById(R.id.resim2);
+        logo = findViewById(R.id.logo);
 
-
+        logo.startAnimation(logoAnim);
         resim1.startAnimation(anim1);
         img.startAnimation(mAnim);
         resim2.startAnimation(anim2);
@@ -36,7 +38,6 @@ public class SplashActivity extends AppCompatActivity {
         new CountDownTimer(2500, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
-
             }
             @Override
             public void onFinish() {

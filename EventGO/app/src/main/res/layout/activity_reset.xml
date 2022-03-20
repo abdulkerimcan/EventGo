@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/light_bg"
+    android:background="@color/backgroundColor"
     tools:ignore="ExtraText">
     tools:context=".Activities.ResetActivity">
 
@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingStart="15dp"
-            android:background="@color/arkaplanRengi"
+            android:background="@color/ToolbarColor"
             tools:ignore="RtlSymmetry">
 
             <TextView
@@ -44,50 +44,51 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
             <RelativeLayout
                 android:layout_width="166dp"
-                android:layout_gravity="center_horizontal"
                 android:layout_height="166dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_weight="0.01">
 
                 <ImageView
+                    android:id="@+id/profile"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/profile"
                     app:srcCompat="@drawable/ic_action_profile" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0px"
+                android:layout_weight="0.12"
                 android:paddingHorizontal="50dp"
-                android:paddingBottom="5dp"
-                android:layout_weight="0.12">
+                android:paddingBottom="5dp">
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/reset_input_isim"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:id="@+id/reset_input_isim"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    app:counterEnabled="true"
-                    app:counterTextAppearance="@style/CounterStyle"
-                    app:counterMaxLength="30"
+                    app:boxCornerRadiusBottomEnd="20dp"
                     app:boxCornerRadiusTopStart="20dp"
-                    app:boxCornerRadiusBottomEnd="20dp">
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:counterTextAppearance="@style/CounterStyle">
 
                     <EditText
+                        android:id="@+id/reset_EditTextEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="17sp"
-                        android:id="@+id/reset_EditTextEmail"
-                        android:textStyle="bold"
-                        android:maxLength="30"
+                        android:hint="E-mailinizi Giriniz"
                         android:inputType="textEmailAddress"
+                        android:maxLength="30"
                         android:textColor="@color/black"
-                        android:hint="E-mailinizi Giriniz"/>
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
             </RelativeLayout>
@@ -95,18 +96,19 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:gravity="center_horizontal"
-                android:layout_weight="0.33">
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal">
+
                 <Button
                     android:id="@+id/btnReset"
-                    android:paddingHorizontal="50dp"
                     android:layout_width="wrap_content"
-                    android:onClick="resetBtn"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/arkaplanRengi"
                     android:background="@drawable/buton_bg"
+                    android:backgroundTint="@color/arkaplanRengi"
+                    android:onClick="resetBtn"
+                    android:paddingHorizontal="50dp"
                     android:text="Reset"
-                    android:textColor="@color/iconSelected"
+                    android:textColor="@color/iconunSelected"
                     android:textSize="17sp" />
             </RelativeLayout>
 

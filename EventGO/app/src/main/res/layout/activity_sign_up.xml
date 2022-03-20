@@ -6,31 +6,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/signup_layout"
-    android:background="@drawable/light_bg"
+    android:background="@color/backgroundColor"
     tools:context=".Activities.SignUpActivity">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.08">
+        android:layout_weight="0.13">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/signUp_toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/ToolbarColor"
             android:paddingStart="15dp"
-            android:background="@color/arkaplanRengi"
+            app:title="Sign Up"
+            app:titleTextColor="@color/iconunSelected"
             tools:ignore="RtlSymmetry">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:text="Sign Up"
-                android:textSize="20sp"
-                android:gravity="center_vertical"
-                android:textStyle="bold"
-                android:textColor="@color/iconSelected"
-                android:layout_height="match_parent" />
+
 
 
         </androidx.appcompat.widget.Toolbar>
@@ -46,10 +41,10 @@
 
         <TextView
             android:id="@+id/signUp_txtGelenMail"
-            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textColor="@color/iconSelected"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -201,17 +196,18 @@
         android:paddingTop="20dp"
         android:gravity="center_horizontal"
         android:layout_weight="0.28">
+
         <Button
             android:id="@+id/button"
-            android:paddingHorizontal="70dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/buton_bg"
             android:backgroundTint="@color/arkaplanRengi"
             android:onClick="btnSignUp"
+            android:paddingHorizontal="70dp"
             android:text="SIGN up"
             android:textAllCaps="true"
-            android:textColor="@color/iconSelected"
+            android:textColor="@color/iconunSelected"
             android:textSize="19sp"
             android:textStyle="bold" />
     </RelativeLayout>

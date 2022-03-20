@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/light_bg"
+    android:background="@color/backgroundColor"
     tools:context=".Activities.SignInActivity">
 
     <RelativeLayout
@@ -17,18 +17,18 @@
             android:id="@+id/signIn_toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/ToolbarColor"
             android:paddingStart="15dp"
-            android:background="@color/arkaplanRengi"
             tools:ignore="RtlSymmetry">
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Sign In"
-                android:textSize="20sp"
+                android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textStyle="bold"
-                android:textColor="@color/iconSelected"
-                android:layout_height="match_parent" />
+                android:text="Sign In"
+                android:textColor="@color/iconunSelected"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
 
         </androidx.appcompat.widget.Toolbar>
@@ -44,10 +44,10 @@
 
         <TextView
             android:id="@+id/textViewEmail"
-            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textColor="@color/iconSelected"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -94,15 +94,15 @@
 
         <Button
             android:id="@+id/btnSignIn"
-            android:paddingHorizontal="70dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/buton_bg"
             android:backgroundTint="@color/arkaplanRengi"
             android:onClick="btnSignIn"
+            android:paddingHorizontal="70dp"
             android:text="Sign In"
             android:textAllCaps="false"
-            android:textColor="@color/iconSelected"
+            android:textColor="@color/iconunSelected"
             android:textSize="19sp"
             android:textStyle="bold" />
 
@@ -115,6 +115,7 @@
         android:gravity="center_horizontal"
         android:paddingHorizontal="10dp"
         android:layout_weight="0.43">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -122,7 +123,7 @@
             android:text="@string/forgot_password"
             android:textAllCaps="false"
             android:textSize="19sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
     </RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/light_bg"
+    android:background="@color/backgroundColor"
     android:orientation="vertical"
     tools:context=".Activities.DetailsActivity">
 
@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
-                android:textColor="@color/black"
+                android:textColor="@color/iconSelected"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -203,6 +203,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="16dp"
             android:layout_height="wrap_content">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -213,9 +214,9 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="Information"
                     app:boxCornerRadiusBottomEnd="20dp"
                     app:boxCornerRadiusTopStart="20dp"
-                    android:hint="Information"
                     app:counterEnabled="false"
                     app:counterTextAppearance="@style/CounterStyle">
 
@@ -258,12 +259,12 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_margin="20dp"
-                    android:layout_height="300dp">
+                    android:layout_height="300dp"
+                    android:layout_margin="20dp">
 
                     <com.furkankerim.eventgo.customMapView xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
                         android:id="@+id/details_mapview"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:touchscreenBlocksFocus="true" />
 
@@ -448,7 +449,7 @@
                 android:padding="10dp"
                 android:text="Make a Comment"
                 android:textAllCaps="false"
-                android:textColor="@color/arkaplanRengi"
+                android:textColor="@color/iconunSelected"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -686,7 +687,7 @@
                     android:backgroundTint="@color/arkaplanRengi"
                     android:onClick="buy"
                     android:text="buy"
-                    android:textColor="@color/iconSelected"
+                    android:textColor="@color/iconunSelected"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 

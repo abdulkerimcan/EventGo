@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    android:background="@color/arkaplanRengi">
+    android:background="#2196f3">
 
 
     <com.google.android.material.appbar.AppBarLayout
@@ -16,7 +16,7 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/light_bg"
+            android:background="#2196f3"
             android:fitsSystemWindows="true"
             android:padding="20dp"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
